@@ -1,7 +1,6 @@
-# My super awesome app
+# My super awesome app - video editing
 
 ## Charlotte Ableman
 
-My name is Charlotte Ableman and I am from Miami, Florida and am a senior at the University of Miami. I am studying Advertising on the Creative Track and have two minors: marketing and interactive media.
-
-<![alt text](https://static1.squarespace.com/static/590245e0cd0f68be3704303b/59e525eca8b2b043961dc65e/5a00eb6f53450aa14e654346/1510009844422/DSC_5574.JPG)>
+This will be an app that creates videos based on the content and music you provide. First, you put media into the app then you put song tack into app.
+After that is done, you will select clips of media you want in the video. Press edit button and app generates a video duration of song and times the editing to the music track so that the transitions are synced to the beats.  
