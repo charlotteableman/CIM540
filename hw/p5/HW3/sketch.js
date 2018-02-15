@@ -6,7 +6,6 @@ var button;
 var button2;
 
 var noseColor = "black";
-
 var sel;
 var eyeColor = "white";
 
