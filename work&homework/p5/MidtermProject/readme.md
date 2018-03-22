@@ -8,3 +8,11 @@ Kids ages 5-7 for exploratory purposes.
 
 ## Where will your project be displayed?
 As a microsite.
+
+## What are the Inputs?
+-Buttons at the top of the image
+-Hit zone (ellipse)
+
+## What are the Outputs?
+-Image loads when button is pressed (4)
+-Image loads when hitzone is hovered on (1)
