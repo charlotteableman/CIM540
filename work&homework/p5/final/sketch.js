@@ -1,4 +1,6 @@
 var dogs = {};
+var button;
+var box = [];
 
 var sizeSelect = ""; // leave with just ""
 var colorSelect = "";
@@ -10,6 +12,15 @@ var smallY = 100;
 
 function preload() {
   loadFont('assets/theboldfont.ttf');
+  box[0] = loadImage("assets/smallbox.png");
+  box[1] = loadImage("assets/mediumbox.png");
+  box[2] = loadImage("assets/largebox.png");
+  box[3] = loadImage("assets/whitebox.png");
+  box[4] = loadImage("assets/brownbox.png");
+  box[5] = loadImage("assets/blackbox.png");
+  box[6] = loadImage("assets/shortbox.png");
+  box[7] = loadImage("assets/longbox.png");
+  box[8] = loadImage("assets/curlybox.png");
 }
 
 function setup() {
@@ -75,33 +86,36 @@ function setup() {
   dogs["blackpoodle"] = {"size":"large", "color":"black", "coat":"curly", "image": loadImage("assets/blackpoodle.png")};
   console.log(dogs["blackpoodle"]);
 
-
+  button = createButton ("find");
+  button.mousePressed(function(){ ; });
 }
 
 
 function draw() {
   // put drawing code here
-  fill("white");
-  rect(30, 50, 55, 55);
 
-  rect(30, 130, 55, 55);
-  rect(30, 220, 55, 55);
 
-  fill("white");
-  rect(140, 50, 55, 55);
 
-  fill("sienna");
-  rect(140, 130, 55, 55);
+  // fill("white");
+  // rect(30, 50, 55, 55);
+  // rect(30, 130, 55, 55);
+  // rect(30, 220, 55, 55);
+  //
+  // fill("white");
+  // rect(140, 50, 55, 55);
+  //
+  // fill("sienna");
+  // rect(140, 130, 55, 55);
+  //
+  // fill("black");
+  // rect(140, 220, 55, 55);
+  //
+  // fill("white");
+  // rect(260, 50, 55, 55);
+  // rect(260, 130, 55, 55);
+  // rect(260, 220, 55, 55);
 
-  fill("black");
-  rect(140, 220, 55, 55);
-
-  fill("white");
-  rect(260, 50, 55, 55);
-  rect(260, 130, 55, 55);
-  rect(260, 220, 55, 55);
-
-  imageMode(CENTER);
+  rectMode(CENTER);
 
 // draw interface
 
