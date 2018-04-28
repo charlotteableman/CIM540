@@ -29,6 +29,7 @@ function setup() {
   background(255);
   loadFont('assets/theboldfont.ttf');
 
+
   dogs["beagle"] = {"size":"small", "color":"brown", "coat":"short", "image": loadImage("assets/beagle.png")};
   console.log(dogs["beagle"]);
   dogs["shiba"] = {"size":"small", "color":"brown", "coat":"long", "image": loadImage("assets/shiba.png")};
@@ -93,29 +94,16 @@ function setup() {
 
 function draw() {
   // put drawing code here
+image(box[0],25,10);
+image(box[1],25,100);
+image(box[2],25,190);
+image(box[3],115,10);
+image(box[4],115,100);
+image(box[5],115,190);
+image(box[6],205,10);
+image(box[7],205,100);
+image(box[8],205,190);
 
-
-
-  // fill("white");
-  // rect(30, 50, 55, 55);
-  // rect(30, 130, 55, 55);
-  // rect(30, 220, 55, 55);
-  //
-  // fill("white");
-  // rect(140, 50, 55, 55);
-  //
-  // fill("sienna");
-  // rect(140, 130, 55, 55);
-  //
-  // fill("black");
-  // rect(140, 220, 55, 55);
-  //
-  // fill("white");
-  // rect(260, 50, 55, 55);
-  // rect(260, 130, 55, 55);
-  // rect(260, 220, 55, 55);
-
-  rectMode(CENTER);
 
 // draw interface
 
