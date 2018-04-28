@@ -1,6 +1,7 @@
 var dogs = {};
 var button;
 var box = [];
+var clicked = [];
 
 var sizeSelect = ""; // leave with just ""
 var colorSelect = "";
@@ -21,6 +22,16 @@ function preload() {
   box[6] = loadImage("assets/shortbox.png");
   box[7] = loadImage("assets/longbox.png");
   box[8] = loadImage("assets/curlybox.png");
+
+  clicked[0] = loadImage("assets/smallclicked.png");
+  clicked[1] = loadImage("assets/mediumclicked.png");
+  clicked[2] = loadImage("assets/largeclicked.png");
+  clicked[3] = loadImage("assets/whiteclicked.png");
+  clicked[4] = loadImage("assets/brownclicked.png");
+  clicked[5] = loadImage("assets/blackclicked.png");
+  clicked[6] = loadImage("assets/shortclicked.png");
+  clicked[7] = loadImage("assets/longclicked.png");
+  clicked[8] = loadImage("assets/curlyclicked.png");
 }
 
 function setup() {
@@ -89,6 +100,7 @@ function setup() {
 
   button = createButton ("find");
   button.mousePressed(function(){ ; });
+
 }
 
 
