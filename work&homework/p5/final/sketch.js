@@ -160,9 +160,11 @@ function setup() {
   console.log(dogs["blackpoodle"]);
 
 
+
   button = createButton ("find");
   button.mousePressed(function(){
   mySound.play();
+
 
 
     for (var dog in dogs){
@@ -189,8 +191,6 @@ function setup() {
   });
 
   //for loop
-
-
 
 
 
@@ -255,10 +255,9 @@ function mousePressed(){
 
       if(coatSelect == uiBoxes[j].type){
         coatSelect = "";
+      }
     }
   }
-}
-
 }
 }
 
