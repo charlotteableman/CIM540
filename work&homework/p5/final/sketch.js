@@ -70,7 +70,6 @@ function preload() {
 function setup() {
   // put setup code here
   createCanvas(700,400);
-  background(255);
   loadFont('assets/theboldfont.ttf');
 
   mySound.setVolume(0.1);
@@ -160,7 +159,7 @@ function setup() {
   console.log(dogs["blackpoodle"]);
 
 
-
+  //
   button = createButton ("find");
   button.mousePressed(function(){
   mySound.play();
@@ -178,7 +177,7 @@ function setup() {
     }
   });
 
-
+  //
   button2 = createButton ("reset");
   button2.mousePressed(function(){
   //reset create
@@ -187,31 +186,33 @@ function setup() {
   colorSelect = "";
   coatSelect = "";
   for(var i  = 0; i < uiBoxes.length; i++){
-    uiBoxes[i].currentState == false};
+    uiBoxes[i].currentState = false};
   });
 
   //for loop
-
+}
 
 
 function draw() {
   // put drawing code here
+  background(255);
 
-for(var i  = 0; i < uiBoxes.length; i++){
-  if(uiBoxes[i].currentState == false){
-    image(uiBoxes[i].off,uiBoxes[i].x,uiBoxes[i].y);
-  }else{
-    image(uiBoxes[i].on,uiBoxes[i].x,uiBoxes[i].y);
+
+  for(var i  = 0; i < uiBoxes.length; i++){
+    if(uiBoxes[i].currentState == false){
+      image(uiBoxes[i].off,uiBoxes[i].x,uiBoxes[i].y);
+    }else{
+      image(uiBoxes[i].on,uiBoxes[i].x,uiBoxes[i].y);
+    }
   }
-}
 
-console.log(currentDog);
+  console.log(currentDog);
 
-if(currentDog == ""){
-  // select another dog
-}else{
-  image(dogs[currentDog].image,400,100,200,200);
-}
+  if(currentDog == ""){
+    // select another dog
+  }else{
+    image(dogs[currentDog].image,400,100,200,200);
+  }
 }
 
 
@@ -259,12 +260,10 @@ function mousePressed(){
     }
   }
 }
-}
 
 
 
 console.log(sizeSelect);
 console.log(colorSelect);
 console.log(coatSelect);
-
-}//end of mousepressed
+}
